@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drużyny</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #121212;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            background-color: #121212;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        th {
+            background-color: #004e6d;
+            color: white;
+            text-align: left;
+        }
+
+        td {
+            font-size: 16px;
+        }
+        
+        .info {
+            flex: 3;
+            text-align: left;
+        }
+
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image a img {
+            max-width: 120px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .image a img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #eaeaea;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #0af;
+            text-decoration: none;
+        }
+        
+        .team {
+            display: flex;
+            align-items: center; /* Ustawienie pionowego wyrównania */
+        }
+
+        .info {
+            flex: 3; /* Tekst drużyny zajmuje większość miejsca */
+            text-align: left;
+        }
+
+        .image {
+            flex: 1; /* Zdjęcie zajmuje mniej miejsca */
+            text-align: center;
+        }
+
+        .image a img {
+            max-width: 120px; /* Rozmiar zdjęcia */
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.2s; /* Efekt najechania */
+        }
+
+        .image a img:hover {
+            transform: scale(1.1); /* Powiększenie zdjęcia po najechaniu */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Drużyny</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="team">
+                    <div class="info">
+                        <h3>"Nazwa drużyny"</h3>
+                        <ul>
+                            <li>Gracz 1</li>
+                            <li>Gracz 2</li>
+                            <li>Gracz 3</li>
+                            <li>Gracz 4</li>
+                            <li>Gracz 5</li>
+                            <li>Trener</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="image">
+                        <a href="LINK" target="_blank">
+                            <img src="drużynykat/profelrc.png" alt="nazwa drużyny">
+                        </a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+        <footer class="footer">
+            <p>&copy;RushCup <a href="https://discord.gg/UjxWHdudGs" target="_blank">Contact Us</a></p>
+        </footer>
+    </body>
+</html>
